@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #f4f6fc;
+  --color-brand-100: #e6ebf8;
+  --color-brand-500: #3b5bdb;
+  --color-brand-600: #364fc7;
+  --color-brand-900: #1c2b66;
+
+  --backgroundColor-background: #ffffff;
+  --textColor-foreground: #0f172a;
+}
+
+/* Base styles for RTL */
+@layer base {
+  body {
+    direction: rtl;
+    font-family: inherit;
+    background-color: var(--backgroundColor-background);
+    color: var(--textColor-foreground);
+  }
+}
